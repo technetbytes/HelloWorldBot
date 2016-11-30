@@ -1,7 +1,8 @@
 {
   "name": "helloworldbot",
   "version": "1.0.0",
-  "description": "Build a bot in Node.js on Microsoft Bot Framework",  
+  "description": "Build a bot in Node.js on Microsoft Bot Framework",
+  "main": "index.html",  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js"
