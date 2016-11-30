@@ -3,11 +3,11 @@ var restify = require('restify');
 var builder = require('botbuilder');
 
 var appId = process.env.MICROSOFT_APP_ID || "Missing your app ID";
-var appSecret = process.env.MICROSOFT_APP_PASSWORD || "Missing your app secret";
+var appPassword = process.env.MICROSOFT_APP_PASSWORD || "Missing your app secret";
 
 // Create bot and add dialogs
 var bot = new builder.BotConnectorBot
-({appId: process.env.MICROSOFT_APP_ID, appSecret: process.env.MICROSOFT_APP_PASSWORD});
+({appId: process.env.MICROSOFT_APP_ID, appPassword: process.env.MICROSOFT_APP_PASSWORD});
 bot.add('/', new builder.SimpleDialog( function (session) {
 session.send('Hello World');
 }));
